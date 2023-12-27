@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="20dp"
+    tools:context=".Register1Activity"
+    tools:ignore="ExtraText"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/variable"
+            android:text="Daftar Akun"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="116dp"
+            android:text="Buat akum untuk melanjutkan"
+            android:layout_below="@id/textViewHeader"
+            />
+        <ImageView
+            android:paddingStart="80dp"
+            android:layout_toRightOf="@id/textViewHeader"
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="83dp"
+            app:srcCompat="@drawable/logohl3"
+            android:layout_alignParentEnd="true"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profil"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="80dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/pink"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:background="@color/pink"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:hint="Nama Pelanggan"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/pink"
+        android:hint="Alamat Pelanggan"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:hint="No Handphone"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/pink"
+         />
+
+    <EditText
+        android:id="@+id/editTextJenis"
+        android:layout_gravity="center_vertical"
+        android:background="@color/pink"
+        android:hint="Jenis Kelamin"
+        android:layout_marginTop="10dp"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:paddingHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:background="@color/pink"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="40dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="10dp"
+         />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="93dp"
+        android:layout_height="48dp"
+        android:background="@color/pink"
+        android:text="Register"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

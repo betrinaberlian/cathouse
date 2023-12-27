@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CatHouse</string>
+    <string name="nama_kucing">Nama Kucing</string>
+    <string name="jenis_kucing">Jenis Kucing</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="jenis_pelayanan">Jenis Pelayanan</string>
+    <string name="tanggal_penjemputan">Tanggal Penjemputan</string>
+    <string name="ok">OK</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="masuk"><![CDATA[MASUK ->]]></string>
+    <string name="belum_punya_akun_daftar">Belum punya akun? DAFTAR</string>
+    <string name="logo">logo</string>
+    <string name="tanggal_pengantar">Tanggal Pengantar</string>
+    <string name="titipkan">TITIPKAN</string>
+</resources>

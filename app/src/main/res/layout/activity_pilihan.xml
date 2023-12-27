@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/latarbelakang2"
+    tools:context=".PilihanActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            android:src="@drawable/cathouse_app"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/headerhomePilihan"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logohome"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:id="@+id/layoutTwo"
+        app:layout_constraintTop_toBottomOf="@id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/perawatan"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_marginStart="16dp"
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logoperawatan" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perawatan Kucing"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageView8"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView100"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Kucing merupakan hewan peliharaan yang banyak disukai orang karena menggemaskan.Meski bisa jadi teman baru dirumah,sayangnya tak semua orang bisa merawat kucing.Bukan hanya tempat tinggal dan makanan saja,kucing juga memerlukan perawatan agar tetap sehat.Merawat kucing yang benar dilakukan dengan menyiapkan segala kebutuhannya,menjaga kesehatan,hingga memilih makanan yang tepat."
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_below="@id/imageView8"
+            android:layout_marginBottom="10dp"
+            tools:ignore="TextSizeCheck" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/layoutThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/penitipan"
+        android:layout_margin="15dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutTwo"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logopenitipan" />
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView121"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penitipan Kucing"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_toEndOf="@id/imageView9"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView123"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Layanan yang disediakan untuk merawat kucing sementara waktu ketika pemiliknya tidak dapat merawatnya sendiri.Layanan yang sangat efektis,seperti membersihkan,menjaga kucing,memberikan konsumsi selama pemiliknya menitipkan hewan peliharaannya.Akan disediakan tempat tidur yang nyaman bagi hewan peliharaan yang sudah dititipkan."
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/imageView9"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttonRegisterPelayanan"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
+        android:background="@color/pink"
+        android:text="DAFTAR PELAYANAN"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="622dp" />
+</LinearLayout>

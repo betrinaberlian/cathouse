@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/latarbelakang2"
+    tools:ignore="MissingDefaultResource"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layoutFirst"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/header"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:padding="20dp"
+            android:src="@drawable/cathouse_app"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/headerhomePendaftaran"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logohome"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titipkan Kucing Mu"
+        android:textAlignment="center"
+        android:textSize="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/edNamakucing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/saturasi"
+        android:hint="@string/nama_kucing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutFirst" />
+
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edJenisKucing"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/saturasi"
+        android:layout_marginTop="10dp"
+        android:hint="@string/jenis_kucing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNamakucing" />
+
+
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/saturasi"
+        android:layout_marginHorizontal="15dp"
+        android:hint="@string/jenis_kelamin"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edJenisKucing" />
+
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edJenisPelayan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/saturasi"
+        android:hint="@string/jenis_pelayanan"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/edJenisKelamin" />
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edTanggalPengantar"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tanggal_pengantar"
+        android:background="@color/saturasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edJenisPelayan" />
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edTanggalPenjemputan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/saturasi"
+        android:hint="@string/tanggal_penjemputan"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edTanggalPengantar" />
+
+    <Button
+        android:id="@+id/buttonTitipkanKucing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:text="@string/titipkan"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
